@@ -1,0 +1,43 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" 
+	xmlns="sap.m" 
+	xmlns:f="sap.f" 
+	xmlns:card="sap.f.cards" 
+	xmlns:w="sap.ui.integration.widgets" 
+	xmlns:m="sap.m" 
+	xmlns:core="sap.ui.core" controllerName="sap.ui.demo.todo.controller.App" displayBlock="true">
+	<Shell>
+		<App>
+			<Page title="{i18n>TITLE}">
+				<VBox class="sapUiMediumMargin">
+					<HBox>
+						<HeaderContainer justifyContent="SpaceBetween" scrollStep="200" id="container1">
+							<FeedContent contentText="@@notify Great outcome of the Presentation today. The new functionality and the new design was well received." subheader="about 1 minute ago in Computer Market" />
+							<NumericContent size="S" scale="M" value="1.75" valueColor="Good" indicator="Up" press="press" />
+							<NumericContent size="S" scale="M" value="0.57" valueColor="Error" indicator="Down" press="press" />
+							<NumericContent value="1762" icon="sap-icon://line-charts"/>
+							<NumericContent value="1762" icon="sap-icon://area-chart"/>
+							<NumericContent size="S" scale="M" value="1.04" valueColor="Normal" indicator="Up" press="press" />
+							<NumericContent size="S" scale="M" value="3.65" valueColor="Good" indicator="Up" press="press" />
+							<NumericContent value="1762" icon="sap-icon://bar-chart"/>
+							<NumericContent size="S" scale="M" value="0.73" valueColor="Error" indicator="Down" press="press" />
+						</HeaderContainer>
+					</HBox>
+					<HBox>
+						<f:Card class="sapUiMediumMargin" width="300px">
+							<f:content>
+								<VBox height="115px" class="sapUiSmallMargin" justifyContent="SpaceBetween">
+									<HBox justifyContent="SpaceBetween">
+										<DatePicker width="186px" placeholder="Choose Date ..."/>
+										<Button text="Book" press="onBookPress" type="Emphasized" />
+									</HBox>
+								</VBox>
+							</f:content>
+						</f:Card>
+						<w:Card class="sapUiMediumMargin" manifest="./manifest.json" width="400px" height="auto"/>
+					</HBox>
+
+				</VBox>
+			</Page>
+		</App>
+	</Shell>
+</mvc:View>
